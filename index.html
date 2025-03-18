@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Koda's Survey</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="icon" type="image/x-icon" href="img/turtle.ico">
+	</head>
+	<body>
+		<div class="container">
+			<h1>Koda's Survey</h1>
+			<form id="surveyForm">
+				<label for="name">Name:</label>
+				<br/>
+				<input type="text" id="name" required>
+				<br/>
+				<label for="age">Age:</label>
+				<br/>
+				<input type="number" id="age" required>
+				<br/>
+				<label for="food">Favorite Food:</label>
+				<br/>
+				<input type="text" id="food">
+				<br/>
+				<label for="color">Favorite Color:</label>
+				<br/>
+				<select id="color">
+					<option value="select">-- Select --</option>
+					<option value="red">Red</option>
+					<option value="orange">Orange</option>
+					<option value="yellow">Yellow</option>
+					<option value="green">Green</option>
+					<option value="blue">Blue</option>
+					<option value="purple">Purple</option>
+					<option value="black">Black</option>
+				</select>
+				<br/>
+				<label>Do you prefer morning or night?</label>
+				&nbsp;&nbsp;
+				<input type="radio" name="time" value="Morning" class="radio"> Morning
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="radio" name="time" value="Night" class="radio"> Night
+				<br/><br/>
+				<label for="funFact">What is one random fun fact about yourself?</label>
+				<br/>
+				<textarea id="funFact"></textarea>
+				<br/>
+				<button type="submit">Submit</button>
+			</form>
+			<div id="response" class="hidden"></div>
+		</div>
+		<div class="favicon-credit">
+			<a target="_blank" href="https://icons8.com/icon/xlqWgLiXNTsV/cute-turtle">Cute Turtle</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
